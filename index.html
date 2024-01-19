@@ -90,14 +90,35 @@
 <section>
     <h2>Client Feedback</h2>
     <p>See what our clients have to say about their experience:</p>
-    <div class="feedback">
-        <!-- Add client feedback here -->
-        <p><strong>Client Name 1:</strong> "Great service! Very satisfied with the work."</p>
-        <p><strong>Client Name 2:</strong> "Professional and reliable. Highly recommend."</p>
-        <!-- Add more feedback as needed -->
-    </div>
+
+<!-- Add this section after the Client Feedback Section in the existing template -->
+<section>
+    <h2>Leave Your Feedback</h2>
+    <p>We value your opinion. Please leave your feedback below:</p>
+
+    <form action="submit_feedback.php" method="post">
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
 </section>
 
+
+
+    
+
+<!-- 
+    <div class="feedback">
+
+        <p><strong>Client Name 1:</strong> "Great service! Very satisfied with the work."</p>
+        <p><strong>Client Name 2:</strong> "Professional and reliable. Highly recommend."</p>
+        Add more feedback as needed
+    </div>
+</section>  -->
+    
     <footer>
         &copy; 2024 Honda Enthusiast Ireland. All rights reserved.
     </footer>
