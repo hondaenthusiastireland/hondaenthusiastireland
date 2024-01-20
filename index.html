@@ -56,12 +56,6 @@
         height: auto; /* Automatically adjust height to maintain aspect ratio */
     }
 
-    /* Responsive styles for different screen sizes */
-    @media screen and (min-width: 768px) {
-        .image-container img {
-            max-width: 50%; /* Adjust image size for screens wider than 768px */
-        }
-    }
         
     /* Responsive styles for smaller screens */
     @media screen and (max-width: 768px) {
@@ -72,6 +66,11 @@
         .service .icon {
             width: 50%; /* Adjust image width for smaller screens */
         }
+        
+        .image-container img {
+            max-width: 50%; /* Adjust image size for screens wider than 768px */
+        }
+        
     }
         
     </style>
