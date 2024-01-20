@@ -8,7 +8,7 @@
     <title>Honda Enthusiast Ireland</title>
     <style>
 
-   .services {
+      .services {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -16,7 +16,6 @@
 
     .service {
         display: flex;
-        align-items: center;
         margin: 2%; /* Adjust margin as a percentage */
         padding: 3%; /* Adjust padding as a percentage */
         background-color: #fff;
@@ -25,7 +24,6 @@
         text-align: center;
     }
 
-
         .contact {
             max-width: 800px;
             margin: 20px auto;
@@ -33,6 +31,10 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+         .service .description {
+        flex: 1; /* Allow the text div to take remaining space */
+    }
     </style>
 </head>
 <body>
