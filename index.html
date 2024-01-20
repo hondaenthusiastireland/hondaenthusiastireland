@@ -17,24 +17,45 @@
 
     .service {
         display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
-        margin: 2%; 
-        padding: 3%;
+        margin: 2%; /* Adjust margin as a percentage */
+        padding: 3%; /* Adjust padding as a percentage */
         background-color: #fff;
-        box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
-        flex-basis: 34%; 
+        box-shadow: 0 0 2% rgba(0, 0, 0, 0.1); /* Adjust box shadow as a percentage */
+        flex-basis: 34%; /* Adjust flex-basis as a percentage */
         text-align: center;
     }
 
     .service .icon {
-        width: 25%; 
-        height: auto; 
-        margin-right: 5%; 
+        width: 25%; /* Adjust image width as a percentage */
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+        margin-bottom: 5%; /* Adjust margin-bottom as a percentage */
     }
 
     .service .description {
         flex: 1; /* Allow the text div to take remaining space */
         text-align: left; /* Align text to the left */
+    }
+
+    /* Style for the Expandable Text Section */
+    section {
+        margin-top: 20px; /* Add top margin to create space */
+    }
+
+    .service-description {
+        margin-bottom: 20px; /* Add bottom margin to create space between rows */
+    }
+
+    /* Responsive styles for smaller screens */
+    @media screen and (max-width: 768px) {
+        .service {
+            flex-basis: 100%; /* Take up full width on smaller screens */
+        }
+
+        .service .icon {
+            width: 50%; /* Adjust image width for smaller screens */
+        }
     }
     </style>
 </head>
