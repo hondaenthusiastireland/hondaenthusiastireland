@@ -52,10 +52,17 @@
             display: block; /* Ensure proper spacing between images */
             margin-bottom: 10px; /* Add some space between images */
     }
-
-        .description-column {
-            width: 60%; /* Adjusted width for the description column */
-            max-width: 60%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
+        .date-column {
+            width: 20%; /* Adjusted width for the description column */
+            max-width: 20%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
+    }
+        .topic-column {
+            width: 30%; /* Adjusted width for the description column */
+            max-width: 30%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
+    }
+        .photo-column {
+            width: 10%; /* Adjusted width for the description column */
+            max-width: 10%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
     }
 
         .general-information {
@@ -64,9 +71,21 @@
         }
 
         @media screen and (max-width: 768px) {
+                .date-column {
+                    width: 10%; /* Adjusted width for the description column */
+                    max-width: 10%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
+            }
+                .topic-column {
+                    width: 10%; /* Adjusted width for the description column */
+                    max-width: 10%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
+            }
+                .photo-column {
+                    width: 10%; /* Adjusted width for the description column */
+                    max-width: 10%; /* Added max-width to ensure it doesn't exceed 60% on smaller screens */
+            }          
             .description-column {
-                width: 100%;
-                max-width: 100%; /* Adjusted max-width for better responsiveness on mobile devices */
+                    width: 100%;
+                    max-width: 100%; /* Adjusted max-width for better responsiveness on mobile devices */
             }
     
             .expandable-photo {
