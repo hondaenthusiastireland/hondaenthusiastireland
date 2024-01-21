@@ -1,3 +1,4 @@
+<!-- rep_submission.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,10 @@
 </head>
 <body>
     <form id="submissionForm">
-        <!-- Your form fields go here (description, photo upload, etc.) -->
+        <!-- Your form fields go here (topic, description, photo upload, etc.) -->
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic">
+
         <label for="description">Description:</label>
         <textarea id="description" name="description"></textarea>
 
@@ -26,6 +30,10 @@
             // You can use AJAX to send data to the server or perform any other required action
             // For simplicity, let's just display a message here
             alert('Submission received!');
+
+            // Redirect to the report page with the topic as a parameter
+            const topic = document.getElementById('topic').value;
+            window.location.href = `report.html?topic=${encodeURIComponent(topic)}`;
         }
     </script>
 </body>
