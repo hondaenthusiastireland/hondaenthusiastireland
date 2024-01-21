@@ -1,55 +1,39 @@
+<!-- report.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports - Honda Enthusiast Ireland</title>
+    <title>Report Page</title>
     <style>
-        /* Your existing styles remain unchanged */
-
-        /* Additional styles for reports section */
-        .reports {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        /* Your styles go here */
     </style>
 </head>
 <body>
+    <!-- Results section visible to everyone -->
+    <div id="reportResults">
+        <!-- Display report results here -->
+    </div>
 
-    <header>
-        <h1>Honda Enthusiast Ireland</h1>
-    </header>
+    <script>
+        // JavaScript logic to fetch and display report results
 
-    <section class="reports">
-        <h2>Reports of Completed Work</h2>
-        <p>Explore our latest reports to see the quality of our work:</p>
-        <ul>
-            <li><a href="#report1">Report 1: Title</a></li>
-            <li><a href="#report2">Report 2: Title</a></li>
-            <!-- Add more report links as needed -->
-        </ul>
-        
-        <!-- Report 1 -->
-        <div id="report1">
-            <h3>Report 1: Title</h3>
-            <p>Summary of the report content. Include details about the work done, challenges faced, and outcomes achieved.</p>
-        </div>
+        // Function to get URL parameters
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
 
-        <!-- Report 2 -->
-        <div id="report2">
-            <h3>Report 2: Title</h3>
-            <p>Summary of the report content. Include details about the work done, challenges faced, and outcomes achieved.</p>
-        </div>
+        // Get the topic parameter from the URL
+        var topic = getParameterByName('topic');
 
-        <!-- Add more report sections as needed -->
-    </section>
-
-    <footer>
-        &copy; 2024 Honda Enthusiast Ireland. All rights reserved.
-    </footer>
-
+        // Use the 'topic' variable as needed
+        console.log('Topic:', topic);
+    </script>
 </body>
 </html>
