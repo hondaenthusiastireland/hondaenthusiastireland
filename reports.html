@@ -45,11 +45,12 @@
             border-bottom: 1px solid #ddd;
         }
 
-        .expandable-photo {
-            max-width: 15%;
-            cursor: pointer;
-            transition: max-width 0.5s;
-        }
+       .expandable-photo {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure proper spacing between images */
+            margin-bottom: 10px; /* Add some space between images */
+    }
 
         .description-column {
             width: 30%;
