@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Page</title>
+    <style>
+        /* Your styles go here */
+    </style>
+</head>
+<body>
+    <form id="submissionForm">
+        <!-- Your form fields go here (description, photo upload, etc.) -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            // JavaScript logic to handle form submission
+            // You can use AJAX to send data to the server or perform any other required action
+            // For simplicity, let's just display a message here
+            alert('Submission received!');
+        }
+    </script>
+</body>
+</html>
