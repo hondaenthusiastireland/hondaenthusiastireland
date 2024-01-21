@@ -57,19 +57,19 @@
             height: auto;
             display: block;
             margin-bottom: 10px;
-    }
+        }
         .date-column {
             width: 10%;
             max-width: 10%;
-    }
+        }
         .topic-column {
             width: 15%;
             max-width: 15%;
-    }
+        }
         .photo-column {
             width: 10%;
             max-width: 10%;
-    }
+        }
 
         .general-information {
             margin-top: 40px;
@@ -77,6 +77,12 @@
         }
 
         @media screen and (max-width: 768px) {
+            tbody {
+                overflow-x: auto;
+                white-space: nowrap;
+                max-width: 160%; 
+            }        
+            
                 .date-column {
                     width: 5%; 
                     max-width: 5%;
