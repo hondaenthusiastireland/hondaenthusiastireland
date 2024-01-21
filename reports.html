@@ -10,10 +10,25 @@
     </style>
 </head>
 <body>
-    <!-- Results section visible to everyone -->
-    <div id="reportResults">
-        <!-- Display report results here -->
+    <!-- Fixed Description -->
+    <div>
+        <h2>Report Description</h2>
+        <p>This is a fixed description for the report page.</p>
     </div>
+
+    <!-- Table for Dynamic Content -->
+    <table id="reportTable">
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Description</th>
+                <th>Photo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic content will be added here -->
+        </tbody>
+    </table>
 
     <script>
         // JavaScript logic to fetch and display report results
@@ -34,6 +49,31 @@
 
         // Use the 'topic' variable as needed
         console.log('Topic:', topic);
+
+        // Sample data (replace this with your actual data)
+        var reportData = [
+            { topic: 'Sample Topic', description: 'Sample Description', photo: 'sample.jpg' },
+            // Add more data as needed
+        ];
+
+        // Function to populate the table with dynamic content
+        function populateTable() {
+            var tableBody = document.querySelector('#reportTable tbody');
+
+            reportData.forEach(function (item) {
+                var row = tableBody.insertRow();
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+
+                cell1.innerHTML = item.topic;
+                cell2.innerHTML = item.description;
+                cell3.innerHTML = '<img src="' + item.photo + '" alt="Photo">';
+            });
+        }
+
+        // Call the function to populate the table
+        populateTable();
     </script>
 </body>
 </html>
