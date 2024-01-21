@@ -7,101 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda Enthusiast Ireland</title>
     <style>
- 
-        body {
-        position: relative; /* Ensure proper stacking context for the overlay */    
-        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('img/hei backround.png');
-/*        background-image: url('img/hei backround.png'); /* Replace with the path to your background image */
-        background-size: cover; /* Cover the entire background */
-        background-position: center; /* Center the background image */
-        background-repeat: no-repeat; /* Do not repeat the background image */
-/*        background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+     body {
+        position: relative;
+        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                    url('img/hei backround.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-
-/*        .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.2) for transparency */
-/*     pointer-events: none; /* Allow interactions with elements beneath the overlay */
-/*}*/
-
-        /* Adjust text styles for better readability */
- /*       h1, h2, h3, h4, h5, h6, p {
- /*       color: #fff; /* Set a text color that contrasts well with the background */
- /*       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a subtle text shadow for separation */
-/*   } */
-
-        
     .services {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-
-        background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.7) for transparency */
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
     .service {
         display: flex;
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
         align-items: center;
-        margin: 2%; /* Adjust margin as a percentage */
-        padding: 3%; /* Adjust padding as a percentage */
+        margin: 2%;
+        padding: 3%;
         background-color: #fff;
-        box-shadow: 0 0 2% rgba(0, 0, 0, 0.1); /* Adjust box shadow as a percentage */
-        flex-basis: 34%; /* Adjust flex-basis as a percentage */
+        box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
+        flex-basis: 34%;
         text-align: center;
     }
 
     .service .icon {
-        width: 25%; /* Adjust image width as a percentage */
-        height: auto; /* Automatically adjust height to maintain aspect ratio */
-        margin-bottom: 5%; /* Adjust margin-bottom as a percentage */
+        width: 25%;
+        height: auto;
+        margin-bottom: 5%;
     }
 
     .service .description {
-        flex: 1; /* Allow the text div to take remaining space */
-        text-align: left; /* Align text to the left */
+        flex: 1;
+        text-align: left;
     }
 
-    /* Style for the Expandable Text Section */
     section {
-        margin-top: 20px; /* Add top margin to create space */
+        margin-top: 20px;
     }
 
     .service-description {
-        margin-bottom: 20px; /* Add bottom margin to create space between rows */
+        margin-bottom: 20px;
     }
 
     .image-container {
-        text-align: center; /* Center the image */
+        text-align: center;
     }
 
     .image-container img {
-        max-width: 15%; /* Make the image responsive by limiting its width to its container */
-        height: auto; /* Automatically adjust height to maintain aspect ratio */
+        max-width: 15%;
+        height: auto;
     }
 
-        
-    /* Responsive styles for smaller screens */
     @media screen and (max-width: 768px) {
         .service {
-            flex-basis: 100%; /* Take up full width on smaller screens */
+            flex-basis: 100%;
         }
 
         .service .icon {
-            width: 50%; /* Adjust image width for smaller screens */
+            width: 50%;
         }
-        
+
         .image-container img {
-            max-width: 50%; /* Adjust image size for screens wider than 768px */
+            max-width: 50%;
         }
-        
     }
-        
+
     </style>
 </head>
 <body>
