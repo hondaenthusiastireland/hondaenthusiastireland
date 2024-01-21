@@ -53,7 +53,8 @@
 
         .description-column {
             width: 30%;
-        }
+            max-width: 30%; /* Added max-width to ensure it doesn't exceed 30% on smaller screens */
+    }
 
         .general-information {
             margin-top: 40px;
@@ -63,7 +64,8 @@
         @media screen and (max-width: 768px) {
             .description-column {
                 width: 100%;
-            }
+                max-width: 100%; /* Adjusted max-width for better responsiveness on mobile devices */
+        }
 
             .expandable-photo {
                 max-width: 100%;
