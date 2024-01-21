@@ -6,7 +6,67 @@
     <title>Reports Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <style>
-        /* Your existing styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .expandable-photo {
+            max-width: 15%;
+            cursor: pointer;
+            transition: max-width 0.5s;
+        }
+
+        .description-column {
+            width: 30%;
+        }
+
+        .general-information {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .description-column {
+                width: 100%;
+            }
+
+            .expandable-photo {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -34,7 +94,7 @@
                 <!-- Reports row -->
                 <tr>
                     <td>2024-01-07</td>
-                    <td>John Doe</td>
+                    <td>Shuttle GP7 in Ennis with clutch issues</td>
                     <td>Software Update</td>
                     <td>Shuttle GP7</td>
                     <td>
