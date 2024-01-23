@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Page</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+
+        header {
+            text-align: center;
+        }
+
+        .header-wrapper {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+       /* tbody {
+            overflow-x: auto;
+            white-space: nowrap;
+            max-width: 80%; 
+        }       */
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+         .expandable-photo {
+            max-width: 45%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .date-column {
+            width: 10%;
+            max-width: 10%;
+        }
+        .topic-column {
+            width: 15%;
+            max-width: 15%;
+        }
+        .job-column {
+            width: 5%;
+            max-width: 5%;
+        }
+        .photo-column {
+            width: 10%;
+            max-width: 10%;
+        }
+
+        .general-information {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+         /*   tbody {
+                overflow-x: auto;
+                white-space: nowrap;
+                max-width: 60%; 
+            }        */
+            table {
+                width: 250%; /* Adjust the width as needed for optimal display */
+            }            
+                    
+                .date-column {
+                    width: 5%; 
+                    max-width: 5%;
+            }
+                .topic-column {
+                    width: 10%; 
+                    max-width: 10%;
+            }
+                .job-column {
+                    width: 10%;
+                    max-width: 10%;
+            }                
+                .photo-column {
+                    width: 10%; 
+                    max-width: 10%; 
+            }          
+                .description-column {
+                   width: 120%;
+                   max-width: none; /* Remove max-width restriction */
+                   overflow-x: auto; /* Enable horizontal scrolling */
+            }
+    
+            .expandable-photo {
+                max-width: 100%; 
+                margin-bottom: 5px; 
+            }
+         
+            .header-wrapper {
+                max-width: 250%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header-wrapper">
+    <header>
+        <h1>Honda Enthusiast Ireland Club</h1>
+        <p>Here's some of our reports</p>
+    </header>
+</div>
+    <div class="container">
+        <h2>Reports</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="date-column">Date</th>
+                    <th class="topic-column">Topic</th>
+                    <th class="job-column">Job Type</th>
+                    <th>Car Model</th>
+                    <th class="photo-column">Photo</th>
+                    <th class="description-column">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Reports row -->
+                <tr>
+                    <td>2024-01-07</td>
+                    <td>Shuttle GP7 in Ennis with clutch issues</td>
+                    <td>Software Update</td>
+                    <td>Shuttle GP7</td>
+                    <td>
+                        
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-1.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-1.jpg" alt="Report Photo">
+                    </a>
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-2.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-2.jpg" alt="Report Photo">
+                    </a>
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-3.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-3.jpg" alt="Report Photo">
+                    </a>
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-4.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-4.jpg" alt="Report Photo">
+                    </a>
+
+                    </td>
+                    <td class="description-column">
+                        <p>                      
+                        The client acquired a 2015 Honda Shuttle GP7 from Japan in 2021 with approximately 80,000 km mileage.
+                        </p>
+                        <p>
+                        Subsequently, reported issues emerged, including abnormal noise from the clutch release bearing and the appearance of a P073F error for 1st gear. Post-driving 100,000+ km, on a highway the clutch failed.
+                        </p>
+                        <p>
+                        A genuine clutch set, costing about 2400 euros, was procured, and replacement was arranged in Dublin. Given the limited servicing for Japanese imports locally, the replacing team claimed to have "calibrated" it, though the client remained sceptical. Procuring a calibration tool, the client undertook the calibration personally, yet rough clutch kicking persisted.
+                        </p>                      
+                        <p>
+                        My investigation revealed outdated software, likely factory-installed, with no history of undergoing Honda recall campaigns.
+                        </p>
+                        <p>
+                        I then updated all modules to the latest versions and it rectified the issues, resulting in a notably smoother driving experience.
+                        </p>
+                        <p>
+                            Safe and enjoyable driving!!!
+                        </p>
+                    </td>
+                </tr>
+
+
+                                <tr>
+                    <td>2024-01-28</td>
+                    <td>Vezel RU3 for calibration after Japan</td>
+                    <td>Transmission Calibration</td>
+                    <td>Vezel RU3</td>
+                    <td>
+                        
+   <!--                 <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-1.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-1.jpg" alt="Report Photo">
+                    </a>
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-2.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-2.jpg" alt="Report Photo">
+                    </a>
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-3.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-3.jpg" alt="Report Photo">
+                    </a>
+                    <a data-fancybox="gallery" href="reports/24-FW-01/24-FW-01-4.jpg" data-caption="Honda Shuttle GP7 in Ennis">
+                        <img class="expandable-photo" src="reports/24-FW-01/24-FW-01-4.jpg" alt="Report Photo">
+                    </a>
+-->
+                    </td>
+                    <td class="description-column">
+                        <p>
+                            After purchasing the vehicle, the client wanted to have the transmission calibrated since it is impossible to know for sure whether the procedure was done before, or when if so.
+                        </p>
+                        <p>
+                            All is now calibrated and runs smoothly the way it should.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Add more report rows as needed -->
+            </tbody>
+        </table>
+
+        <div class="general-information">
+            <h2>Join Our Honda Club!</h2>
+            <p>Take care of your vehicle and join our happy Honda community. Be a part of the enthusiasts who share their experiences and love for Honda cars.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</body>
+</html>
