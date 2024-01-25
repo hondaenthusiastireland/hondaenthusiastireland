@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reports Page</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <style>
@@ -15,7 +15,7 @@
             background-color: #f7f7f7;
             color: #333;
         }
-                header {
+        header {
             text-align: center;
         }
         .header-wrapper {
@@ -38,19 +38,12 @@
             margin-top: 20px;
             overflow-x: auto;
         }
-
-       /* tbody {
-            overflow-x: auto;
-            white-space: nowrap;
-            max-width: 80%; 
-        }       */
-
         th, td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-         .expandable-photo {
+        .expandable-photo {
             max-width: 45%;
             height: auto;
             display: block;
@@ -76,59 +69,48 @@
             width: 10%;
             max-width: 10%;
         }
-
         .general-information {
             margin-top: 40px;
             text-align: center;
         }
-
-        .div.scroll    {
-            Width-5px;
-            Height-10 px;
-            Overflow-x:scroll;
+        .divScroll {
+            width: 5px;
+            height: 10px;
+            overflow-x: scroll;
         }
-
         @media screen and (max-width: 768px) {
-         /*   tbody {
-                overflow-x: auto;
-                white-space: nowrap;
-                max-width: 60%; 
-            }        */
             table {
-                width: 250%; /* Adjust the width as needed for optimal display */
-            }            
-                    
-                .date-column {
-                    width: 5%; 
-                    max-width: 5%;
+                width: 250%;
             }
-                .topic-column {
-                    width: 10%; 
-                    max-width: 10%;
+            .date-column {
+                width: 5%;
+                max-width: 5%;
             }
-                .job-column {
-                    width: 10%;
-                    max-width: 10%;
-            }                
-                .model-column {
-                    width: 5%;
-                    max-width: 10%;
+            .topic-column {
+                width: 10%;
+                max-width: 10%;
             }
-                .photo-column {
-                    width: 10%; 
-                    max-width: 10%; 
-            }          
-                .description-column {
-                   width: 120%;
-                   max-width: none; /* Remove max-width restriction */
-                   overflow-x: auto; /* Enable horizontal scrolling */
+            .job-column {
+                width: 10%;
+                max-width: 10%;
             }
-    
+            .model-column {
+                width: 5%;
+                max-width: 10%;
+            }
+            .photo-column {
+                width: 10%;
+                max-width: 10%;
+            }
+            .description-column {
+                width: 120%;
+                max-width: none;
+                overflow-x: auto;
+            }
             .expandable-photo {
-                max-width: 100%; 
-                margin-bottom: 5px; 
+                max-width: 100%;
+                margin-bottom: 5px;
             }
-         
             .header-wrapper {
                 max-width: 250%;
             }
@@ -136,16 +118,17 @@
     </style>
 </head>
 <body>
-<div class="header-wrapper">
-    <header>
-        <h1>Honda Enthusiast Ireland Club</h1>
-        <p>Here's some of our reports</p>
-    </header>
-</div>
+    <div class="header-wrapper">
+        <header>
+            <h1>Honda Enthusiast Ireland Club</h1>
+            <p>Here's some of our reports</p>
+        </header>
+    </div>
     <div class="container">
         <h2>Reports</h2>
-<div class="divScroll">
-        <table>
+        <div class="divScroll">
+            <table>
+
             <thead>
                 <tr>
                     <th class="date-column">Date</th>
@@ -270,20 +253,17 @@
                 </tr>
 
                 <!-- Add more report rows as needed -->
-            </tbody>
-        </table>
-    </div>
-
+            </tbody>            
+            </table>
+        </div>
         <div class="general-information">
             <h2>Join Our Honda Club!</h2>
             <p>Take care of your vehicle and join our happy Honda community. Be a part of the enthusiasts who share their experiences and love for Honda cars.</p>
             <p>
-                <a href="index.html">Back to Main</a> 
+                <a href="index.html">Back to Main</a>
             </p>
         </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
