@@ -9,16 +9,18 @@
 <style>
     body {
         position: relative;
-        background: url('img/hei backround.png') center/cover no-repeat;
-        font-family: 'Arial', sans-serif;
-        color: #333;
+        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                    url('img/hei backround.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .services {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.0);
     }
 
     .service {
@@ -31,24 +33,19 @@
         box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
         flex-basis: 34%;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.0);
     }
 
     .service .icon {
         width: 25%;
         height: auto;
         margin-bottom: 5%;
-    }
-
-    .service h2 {
-        font-size: 1.8em; /* Adjust font size */
-        font-weight: bold;
-        margin-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.0);
     }
 
     .service .description {
         flex: 1;
         text-align: left;
-        line-height: 1.6; /* Adjust line height for better readability */
     }
 
     section {
